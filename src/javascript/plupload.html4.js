@@ -221,6 +221,14 @@
 							up.trigger('FileUploaded', currentFile, {
 								response : result
 							});
+						} else {
+							currentFile.status = plupload.FAILED;
+							up.trigger('Error', {
+								code : plupload.HTTP_ERROR,
+								message : plupload.translate('HTTP Error.'),
+								file : currentFile,
+								status : 500
+							});
 						}
 					}, up.id);
 				} // end createIframe
