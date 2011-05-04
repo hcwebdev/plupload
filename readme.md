@@ -53,8 +53,7 @@ Signs the jar. Before running this you should create a certificate `keytool -gen
 
 Combines the three steps above and copies the jar file to the js directory.
 
-Running the development version with the Java runtime
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
+### Running the development version with the Java runtime
 
 `examples/server.py`
 
@@ -62,8 +61,7 @@ Runs the upload Python backend for the Java applet (precondition: the werkzeug p
 
 None of the default examples, other that queue_widget_with_java.html, include the Java runtime at present.
 
-What you need to build Plupload with the Java runtime
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
+### What you need to build Plupload with the Java runtime
 * Install the Java JDK or JRE packages you can find it at: [http://java.sun.com/javase/downloads/index.jsp](http://java.sun.com/javase/downloads/index.jsp)
 * Install Apache Ant you can find it at: [http://ant.apache.org/](http://ant.apache.org/)
 * Add Apache Ant to your systems path environment variable, this is not required but makes it easier to issue commands to Ant without having to type the full path for it.
