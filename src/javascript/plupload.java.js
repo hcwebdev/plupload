@@ -1,5 +1,5 @@
 /**
- * plupload.flash.js
+ * plupload.java.js
  *
  * Copyright 2011, Jacob Radford
  * Released under GPL License.
@@ -125,7 +125,7 @@
    * @class plupload.runtimes.Applet
    * @extends plupload.Runtime
    */
-  plupload.runtimes.Flash = plupload.addRuntime("java", {
+  plupload.runtimes.Applet = plupload.addRuntime("java", {
     
     /**
      * Returns a list of supported features for the runtime.
