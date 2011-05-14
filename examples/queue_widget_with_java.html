@@ -18,7 +18,7 @@
 
 <script type="text/javascript" src="/js_dev/plupload.js"></script>
 <!-- <script type="text/javascript" src="/js_dev/plupload.gears.js"></script> -->
-<!-- <script type="text/javascript" src="/js_dev/plupload.silverlight.js"></script> -->
+<script type="text/javascript" src="/js_dev/plupload.silverlight.js"></script>
 <script type="text/javascript" src="/js_dev/plupload.flash.js"></script>
 <!-- <script type="text/javascript" src="/js_dev/plupload.browserplus.js"></script> -->
 <script type="text/javascript" src="/js_dev/plupload.html4.js"></script>
@@ -44,8 +44,8 @@
   </div>
 
   <div style="float: left; margin-right: 20px">
-    <!-- <h3>Silverlight runtime</h3>
-    <div id="silverlight_uploader" style="width: 450px; height: 330px;">You browser doesn't have Silverlight installed.</div> -->
+    <h3>Silverlight runtime</h3>
+    <div id="silverlight_uploader" style="width: 450px; height: 330px;">You browser doesn't have Silverlight installed.</div>
 
     <h3>HTML 5 runtime</h3>
     <div id="html5_uploader" style="width: 450px; height: 330px;">You browser doesn't support native upload. Try Firefox 3 or Safari 4.</div>
@@ -125,25 +125,25 @@ $(function() {
   //  resize : {width : 320, height : 240, quality : 90}
   // });
 
-  // // Setup silverlight version
-  // $("#silverlight_uploader").pluploadQueue({
-  //  // General settings
-  //  runtimes : 'silverlight',
-  //  url : '/',
-  //  max_file_size : '10mb',
-  //  chunk_size : '1mb',
-  //  unique_names : true,
-  //  filters : [
-  //    {title : "Image files", extensions : "jpg,gif,png"},
-  //    {title : "Zip files", extensions : "zip"}
-  //  ],
-  // 
-  //  // Resize images on clientside if we can
-  //  resize : {width : 320, height : 240, quality : 90},
-  // 
-  //  // Silverlight settings
-  //  silverlight_xap_url : '/js/plupload.silverlight.xap'
-  // });
+  // Setup silverlight version
+  $("#silverlight_uploader").pluploadQueue({
+   // General settings
+   runtimes : 'silverlight',
+   url : '/',
+   // max_file_size : '10mb',
+   chunk_size : '1mb',
+   unique_names : true,
+   // filters : [
+   //   {title : "Image files", extensions : "jpg,gif,png"},
+   //   {title : "Zip files", extensions : "zip"}
+   // ],
+  
+   // Resize images on clientside if we can
+   // resize : {width : 320, height : 240, quality : 90},
+  
+   // Silverlight settings
+   silverlight_xap_url : '/js/plupload.silverlight.xap'
+  });
 
   // Setup html5 version
   $("#html5_uploader").pluploadQueue({
